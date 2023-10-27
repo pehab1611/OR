@@ -21,3 +21,4 @@ Laboratorijska vježba za predmet Otvoreno računarstvo na FERu
   - number of team's fastest laps
   - team's points
   - drivers : number, name, last name, nationality
+- ključne riječi: Formula 1, 2023, motorsport
