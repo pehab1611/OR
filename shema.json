@@ -1,0 +1,127 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "https://github.com/pehab1611/OR/blob/main/or.json",
+    "type": "array",
+    "title": "OR F1 Timovi",
+    "description": "Set of F1 teams for OR",
+    "items": {
+        "type": "object",
+        "title": "Team",
+        "description": "Object containing all of the data about a team ",
+        "required": [
+            "teamname",
+            "teambase",
+            "teamchief",
+            "chassis",
+            "powerunit",
+            "firstentry",
+            "teamchampionships",
+            "driverchampionships",
+            "highestracefinish",
+            "poleposition",
+            "fastestlaps",
+            "points",
+            "drivers"
+        ],
+        "properties": {
+            "teamname": {
+                "type": "string",
+                "title": "Team name",
+                "description": "Team Name"
+            },
+            "teambase": {
+                "type": "string",
+                "title": "Team base",
+                "description": "A place where the team base is"
+            },
+            "teamchief": {
+                "type": "string",
+                "title": "Team chief",
+                "description": "A person that is the team chief"
+            },
+            "chassis": {
+                "type": "string",
+                "title": "Chassis",
+                "description": "Name of the chassis that the team is using this season"
+            },
+            "powerunit": {
+                "type": "string",
+                "title": "Powerunit",
+                "description": "A brand of the engine the team is using this season"
+            },
+            "firstentry": {
+                "type": "integer",
+                "title": "First entry",
+                "description": "The year the team first competed in F1"
+            },
+            "teamchampionships": {
+                "type": "integer",
+                "title": "Team championships",
+                "description": "The number of team championships the team has won"
+            },
+            "driverchampionships": {
+                "type": "integer",
+                "title": "Driver championships",
+                "description": "The number of championships the drivers won with this team"
+            },
+            "highestracefinish": {
+                "type": "integer",
+                "title": "Highest race finish",
+                "description": "Highest place the drivers achieved with the team "
+            },
+            "poleposition": {
+                "type": "integer",
+                "title": "Pole positions ",
+                "description": "The number of pole positions the drivers achieved with the team"
+            },
+            "fastestlaps": {
+                "type": "integer",
+                "title": "Fastest laps",
+                "description": "The number of fastest laps the drivers have achieved with the team"
+            },
+            "points": {
+                "type": "integer",
+                "title": "Points",
+                "description": "Points the team has collected during the season"
+            },
+            "drivers": {
+                "type": "array",
+                "title": "Drivers",
+                "description": "Array containing current drivers",
+                "items": {
+                    "type": "object",
+                    "title": "Driver",
+                    "description": "An object containing all of the data about a driver",
+                    "required": [
+                        "drivernum",
+                        "drivername",
+                        "driverlast",
+                        "nationality"
+                    ],
+                    "properties": {
+                        "drivernum": {
+                            "type": "integer",
+                            "title": "Driver number",
+                            "description": "A number chosen by the driver as their identifier"
+                        },
+                        "drivername": {
+                            "type": "string",
+                            "title": "Driver name",
+                            "description": "Driver name"
+                        },
+                        "driverlast": {
+                            "type": "string",
+                            "title": "Driver last name",
+                            "description": "Driver last name"
+                        },
+                        "nationality": {
+                            "type": "string",
+                            "title": "Nationality",
+                            "description": "Driver's nationality"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

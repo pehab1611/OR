@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Search</title>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+    <script src="/function.js"> </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>F1 TEAMS</h1>
+    <form id="searchForm">
+        <input id="query" type="text" placeholder="Search">
+        <button onclick="displayData()">Search</button>
+        <select id="field">
+            <option value="wildcard">wildcard</option>
+            <% for (let column of columns) { %>
+                <option value="<%=column%>"><%=column%></option> 
+            <% } %>
+        </select>
+    </form>
+    <button onclick="resetData()">Reset</button>
+    <button onclick="toJson()">Save to json</button>
+    <button onclick="toCsv()">Save to csv</button>
+    <table id="data">
+        <tr>
+            <% for (let column of columns) { %>
+                <th><%= column %></td>
+            <% } %>
+        </tr>
+        <% for (let team of teams) { %>
+            <tr>
+                <% for (let field of columns) { %>
+                    <td><%= team[field] %></td>
+                <% } %>
+            </tr>
+        <% } %>
+    </table>
+    <script>
+        var form = document.getElementById("searchForm");
+        function handleForm(event) { event.preventDefault(); }
+        form.addEventListener('submit', handleForm);
+        localStorage.setItem('query', '');
+        localStorage.setItem('field', 'wildcard');
+    </script>
+</body>
+</html>
