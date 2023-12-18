@@ -1,0 +1,812 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Formula 1 API",
+    "version": "1.0.0",
+    "description": "API for managing Formula 1 team and driver data"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000"
+    }
+  ],
+  "paths": {
+    "/api/v1/data": {
+      "get": {
+        "summary": "Get all team data with drivers",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "teamName": {
+                            "type": "string"
+                          },
+                          "teamBase": {
+                            "type": "string"
+                          },
+                          "teamChief": {
+                            "type": "string"
+                          },
+                          "chassis": {
+                            "type": "string"
+                          },
+                          "powerUnit": {
+                            "type": "string"
+                          },
+                          "firstEntry": {
+                            "type": "number"
+                          },
+                          "teamChampionships": {
+                            "type": "number"
+                          },
+                          "driverChampionships": {
+                            "type": "number"
+                          },
+                          "highestRaceFinish": {
+                            "type": "number"
+                          },
+                          "polePositions": {
+                            "type": "number"
+                          },
+                          "fastestLaps": {
+                            "type": "number"
+                          },
+                          "points": {
+                            "type": "number"
+                          },
+                          "drivers": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "driverName": {
+                                  "type": "string"
+                                },
+                                "driverLast": {
+                                  "type": "string"
+                                },
+                                "driverNum": {
+                                  "type": "number"
+                                },
+                                "nationality": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Empty database response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data/{id}": {
+      "get": {
+        "summary": "Get team data with drivers by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Team ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "object",
+                      "properties": {
+                        "teamName": {
+                          "type": "string"
+                        },
+                        "teamBase": {
+                          "type": "string"
+                        },
+                        "teamChief": {
+                          "type": "string"
+                        },
+                        "drivers": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "teamName": {
+                                "type": "string"
+                              },
+                              "teamBase": {
+                                "type": "string"
+                              },
+                              "teamChief": {
+                                "type": "string"
+                              },
+                              "chassis": {
+                                "type": "string"
+                              },
+                              "powerUnit": {
+                                "type": "string"
+                              },
+                              "firstEntry": {
+                                "type": "number"
+                              },
+                              "teamChampionships": {
+                                "type": "number"
+                              },
+                              "driverChampionships": {
+                                "type": "number"
+                              },
+                              "highestRaceFinish": {
+                                "type": "number"
+                              },
+                              "polePositions": {
+                                "type": "number"
+                              },
+                              "fastestLaps": {
+                                "type": "number"
+                              },
+                              "points": {
+                                "type": "number"
+                              },
+                              "drivers": {
+                                "type": "array",
+                                "items": {
+                                  "type": "object",
+                                  "properties": {
+                                    "driverName": {
+                                      "type": "string"
+                                    },
+                                    "driverLast": {
+                                      "type": "string"
+                                    },
+                                    "driverNum": {
+                                      "type": "number"
+                                    },
+                                    "nationality": {
+                                      "type": "string"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Wrong ID",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/team/{id}": {
+      "get": {
+        "summary": "Get team information by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Team ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "teamName": {
+                            "type": "string"
+                          },
+                          "teamBase": {
+                            "type": "string"
+                          },
+                          "teamChief": {
+                            "type": "string"
+                          },
+                          "chassis": {
+                            "type": "string"
+                          },
+                          "powerUnit": {
+                            "type": "string"
+                          },
+                          "firstEntry": {
+                            "type": "number"
+                          },
+                          "teamChampionships": {
+                            "type": "number"
+                          },
+                          "driverChampionships": {
+                            "type": "number"
+                          },
+                          "highestRaceFinish": {
+                            "type": "number"
+                          },
+                          "polePositions": {
+                            "type": "number"
+                          },
+                          "fastestLaps": {
+                            "type": "number"
+                          },
+                          "points": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Wrong ID or data not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/driver/{id}": {
+      "get": {
+        "summary": "Get driver information by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Driver ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "driverNum": {
+                            "type": "number"
+                          },
+                          "driverName": {
+                            "type": "string"
+                          },
+                          "driverLast": {
+                            "type": "string"
+                          },
+                          "nationality": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Wrong ID or data not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/drivers/{id}": {
+      "get": {
+        "summary": "Get drivers for a team by ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Team ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    },
+                    "response": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "driverNum": {
+                            "type": "number"
+                          },
+                          "driverName": {
+                            "type": "string"
+                          },
+                          "driverLast": {
+                            "type": "string"
+                          },
+                          "nationality": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Wrong ID or data not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/add/team": {
+      "post": {
+        "summary": "Add a new team",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "teamName": {
+                    "type": "string"
+                  },
+                  "teamBase": {
+                    "type": "string"
+                  },
+                  "teamChief": {
+                    "type": "string"
+                  },
+                  "chassis": {
+                    "type": "string"
+                  },
+                  "powerUnit": {
+                    "type": "string"
+                  },
+                  "firstEntry": {
+                    "type": "number"
+                  },
+                  "teamChampionships": {
+                    "type": "number"
+                  },
+                  "driverChampionships": {
+                    "type": "number"
+                  },
+                  "highestRaceFinish": {
+                    "type": "number"
+                  },
+                  "polePositions": {
+                    "type": "number"
+                  },
+                  "fastestLaps": {
+                    "type": "number"
+                  },
+                  "points": {
+                    "type": "number"
+                  },
+                  "drivers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "driverName": {
+                          "type": "string"
+                        },
+                        "driverLast": {
+                          "type": "string"
+                        },
+                        "driverNum": {
+                          "type": "number"
+                        },
+                        "nationality": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "driverName",
+                        "driverLast",
+                        "driverNum",
+                        "nationality"
+                      ]
+                    }
+                  }
+                },
+                "required": [
+                  "teamName",
+                  "teamBase",
+                  "teamChief",
+                  "chassis",
+                  "powerUnit",
+                  "firstEntry",
+                  "teamChampionships",
+                  "driverChampionships",
+                  "highestRaceFinish",
+                  "polePositions",
+                  "fastestLaps",
+                  "points",
+                  "drivers"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Team added successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Invalid data provided or team already exists",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/edit/team/{id}": {
+      "put": {
+        "summary": "Edit an existing team",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Team name (ID)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "teamBase": {
+                    "type": "string"
+                  },
+                  "teamChief": {
+                    "type": "string"
+                  },
+                  "chassis": {
+                    "type": "string",
+                    "maxLength": 10
+                  },
+                  "powerUnit": {
+                    "type": "string"
+                  },
+                  "firstEntry": {
+                    "type": "number"
+                  },
+                  "teamChampionships": {
+                    "type": "number"
+                  },
+                  "driverChampionships": {
+                    "type": "number"
+                  },
+                  "highestRaceFinish": {
+                    "type": "number"
+                  },
+                  "polePositions": {
+                    "type": "number"
+                  },
+                  "fastestLaps": {
+                    "type": "number"
+                  },
+                  "points": {
+                    "type": "number"
+                  },
+                  "drivers": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "driverName": {
+                          "type": "string"
+                        },
+                        "driverLast": {
+                          "type": "string"
+                        },
+                        "driverNum": {
+                          "type": "number"
+                        },
+                        "nationality": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "driverName",
+                        "driverLast",
+                        "driverNum",
+                        "nationality"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Team edited successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Invalid data provided, team does not exist, or duplicate driver",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/delete/{id}": {
+      "delete": {
+        "summary": "Delete an existing team",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "Team name (ID)",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Team removed successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Error response - Team does not exist",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "message": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
