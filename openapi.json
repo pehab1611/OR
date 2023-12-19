@@ -3,7 +3,7 @@
   "info": {
     "title": "Formula 1 API",
     "version": "1.0.0",
-    "description": "API for managing Formula 1 team and driver data",
+    "description": "API for managing Formula 1 teams and drivers data",
     "contact": {
       "name": "Petra Habjanec",
       "email": "petra.habjanec@fer.hr"
