@@ -3,7 +3,15 @@
   "info": {
     "title": "Formula 1 API",
     "version": "1.0.0",
-    "description": "API for managing Formula 1 team and driver data"
+    "description": "API for managing Formula 1 team and driver data",
+    "contact": {
+      "name": "Petra Habjanec",
+      "email": "petra.habjanec@fer.hr"
+    },
+    "license": {
+      "name": "CC0",
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+    }
   },
   "servers": [
     {
@@ -14,6 +22,7 @@
     "/api/v1/data": {
       "get": {
         "summary": "Get all team data with drivers",
+        "description": "Returns all the team data and its drivers",
         "responses": {
           "200": {
             "description": "Successful response",
@@ -97,7 +106,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Empty database response",
             "content": {
               "application/json": {
@@ -121,6 +130,7 @@
     "/api/v1/data/{id}": {
       "get": {
         "summary": "Get team data with drivers by ID",
+        "description": "Return a single team with its drivers",
         "parameters": [
           {
             "in": "path",
@@ -229,7 +239,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Wrong ID",
             "content": {
               "application/json": {
@@ -253,6 +263,7 @@
     "/api/v1/team/{id}": {
       "get": {
         "summary": "Get team information by ID",
+        "description": "Return a single team info",
         "parameters": [
           {
             "in": "path",
@@ -327,7 +338,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Wrong ID or data not found",
             "content": {
               "application/json": {
@@ -351,6 +362,7 @@
     "/api/v1/driver/{id}": {
       "get": {
         "summary": "Get driver information by ID",
+        "description": "Return a single driver info",
         "parameters": [
           {
             "in": "path",
@@ -401,7 +413,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Wrong ID or data not found",
             "content": {
               "application/json": {
@@ -425,6 +437,7 @@
     "/api/v1/drivers/{id}": {
       "get": {
         "summary": "Get drivers for a team by ID",
+        "description": "Return drivers info by their team id",
         "parameters": [
           {
             "in": "path",
@@ -475,7 +488,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Wrong ID or data not found",
             "content": {
               "application/json": {
@@ -499,6 +512,7 @@
     "/api/v1/add/team": {
       "post": {
         "summary": "Add a new team",
+        "description": "Adds a new team",
         "requestBody": {
           "required": true,
           "content": {
@@ -607,7 +621,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Invalid data provided or team already exists",
             "content": {
               "application/json": {
@@ -631,6 +645,7 @@
     "/api/v1/edit/team/{id}": {
       "put": {
         "summary": "Edit an existing team",
+        "description": "Edits parameters of existing team",
         "parameters": [
           {
             "name": "id",
@@ -733,7 +748,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Invalid data provided, team does not exist, or duplicate driver",
             "content": {
               "application/json": {
@@ -757,6 +772,7 @@
     "/api/v1/delete/{id}": {
       "delete": {
         "summary": "Delete an existing team",
+        "description": "Deletes team by ID",
         "parameters": [
           {
             "name": "id",
@@ -787,7 +803,7 @@
               }
             }
           },
-          "400": {
+          "404": {
             "description": "Error response - Team does not exist",
             "content": {
               "application/json": {
