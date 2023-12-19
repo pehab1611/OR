@@ -47,7 +47,7 @@ app.get('/api/v1/data', async(req, res) => {
   if(data) {
     res.status(200).json({ status: 'OK', message: 'List of all data', response : data});
   } else {
-    res.status(400).json({ status: 'Empty database', message: 'Empty data base', response : data});
+    res.status(404).json({ status: 'Empty database', message: 'Empty data base', response : data});
   }
 });
 
@@ -69,7 +69,7 @@ app.get('/api/v1/data/:id', async(req, res) => {
     FROM teams WHERE teams.teamName = '` + id + `') result)`;
   data = await getQuery(query);
   if (!data) {
-    res.status(400).json({ status: 'Error', message: 'Wrong id', response : null});
+    res.status(404).json({ status: 'Error', message: 'Wrong id', response : null});
   } else {
     res.status(200).json({ status: 'OK', message: 'Data for team ' + id, response : data[0]});
   }
@@ -86,10 +86,10 @@ app.get('/api/v1/team/:id', async(req, res) => {
     if(data) {
       res.status(200).json({ status: 'OK', message: 'Data for team ' + id, response : data});
     } else {
-      res.status(400).json({ status: 'Error', message: 'Wrong id', response : null});
+      res.status(404).json({ status: 'Error', message: 'Wrong id', response : null});
     }
   } catch (err) {
-    res.status(400).json({ status: 'Error', message: err.message, response : null});
+    res.status(404).json({ status: 'Error', message: err.message, response : null});
   }
 });
 
@@ -104,10 +104,10 @@ app.get('/api/v1/driver/:id', async(req, res) => {
     if(data) {
       res.status(200).json({ status: 'OK', message: 'Data for drivers of ' + id, response : data});
     } else {
-      res.status(400).json({ status: 'Error', message: 'Wrong id', response : null});
+      res.status(404).json({ status: 'Error', message: 'Wrong id', response : null});
     }
   } catch (err) {
-    res.status(400).json({ status: 'Error', message: err.message, response : null});
+    res.status(404).json({ status: 'Error', message: err.message, response : null});
   }
 });
 
@@ -122,10 +122,10 @@ app.get('/api/v1/drivers/:id', async(req, res) => {
     if(data) {
       res.status(200).json({ status: 'OK', message: 'Data for team ' + id + ' drivers', response : data});
     } else {
-      res.status(400).json({ status: 'Error', message: 'Wrong id', response : null});
+      res.status(404).json({ status: 'Error', message: 'Wrong id', response : null});
     }
   } catch (err) {
-    res.status(400).json({ status: 'Error', message: err.message, response : null});
+    res.status(404).json({ status: 'Error', message: err.message, response : null});
   }
 });
 
@@ -136,7 +136,7 @@ app.post('/api/v1/add/team', async (req, res) => {
       var query = `(SELECT * FROM teams WHERE teamName = '` + teamName + `')`;
       const t = await pool.query(query);
       if(t.rows.length > 0) {
-        res.status(400).json({status: 'Already exists', message: 'Team with name ' + teamName + ' already exists', response: null});
+        res.status(404).json({status: 'Already exists', message: 'Team with name ' + teamName + ' already exists', response: null});
         return; 
       }
       if(chassis.length > 10) {
@@ -166,10 +166,10 @@ app.post('/api/v1/add/team', async (req, res) => {
       });
       res.status(200).json({ status: 'Success', message: 'Team added successfully', response: null });
     } catch (err) {
-      res.status(400).json({ status: 'Error', message: err.message, response: null });
+      res.status(404).json({ status: 'Error', message: err.message, response: null });
     }
   } else {
-    res.status(400).json({ status: 'Error', message: 'Invalid data provided', response: null });
+    res.status(404).json({ status: 'Error', message: 'Invalid data provided', response: null });
   }
 });
 
@@ -186,7 +186,7 @@ app.put('/api/v1/edit/team/:id', async (req, res) => {
     var query = `(SELECT * FROM teams WHERE teamName = '` + teamName + `')`;
     const t = await pool.query(query);
     if(t.rows.length == 0) {
-      res.status(400).json({status: 'Does not exist', message: 'Team with name ' + teamName + ' does not exist', response: null});
+      res.status(404).json({status: 'Does not exist', message: 'Team with name ' + teamName + ' does not exist', response: null});
       return;
     }
     if(chassis && chassis.length > 10) {
@@ -267,7 +267,7 @@ app.put('/api/v1/edit/team/:id', async (req, res) => {
     }
     console.log(doIt);
   } catch (err) {
-    res.status(400).json({ status: 'Error', message: err.message, response: null });
+    res.status(404).json({ status: 'Error', message: err.message, response: null });
   }
 });
 
@@ -292,7 +292,7 @@ app.delete('/api/v1/delete/:id', async (req, res) => {
     })
     res.status(200).json({ status: 'Success', message: 'Team removed successfully', response: null })
   } catch (err) {
-    res.status(400).json({ status: 'Error', message: err.message, response: null });
+    res.status(404).json({ status: 'Error', message: err.message, response: null });
   }
 });
 
@@ -310,7 +310,7 @@ app.get('/api/v1/openapi', (req, res) => {
 
 
 app.use((req, res, next) => {
-  res.status(500).json({ status: 'Error', message: 'Path not defined', response: null});
+  res.status(501).json({ status: 'Error', message: 'Path not defined', response: null});
 });
 
 app.listen(3000, () => {
