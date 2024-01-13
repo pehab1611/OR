@@ -1,7 +1,7 @@
 async function displayData() {
     var text = document.getElementById('query').value;
     var category = document.getElementById('field').value;
-    const url = '/data?text=' + text + '&category=' + category;
+    const url = '/search?text=' + text + '&category=' + category;
     fetch(url)
         .then(response => {
             if(!response.ok) {console.log('There was an error!');};
@@ -41,7 +41,7 @@ async function displayData() {
 async function resetData() {
     var text = '';
     var category = 'wildcard';
-    const url = '/data?text=' + text + '&category=' + category;
+    const url = '/search?text=' + text + '&category=' + category;
     fetch(url)
         .then(response => {
             if(!response.ok) {console.log('There was an error!');};
@@ -126,6 +126,43 @@ async function toJson() {
         })
 }
 
+async function serveJson() {
+    fetch('http://localhost:3000/filejson')       
+        .then(response => {
+            if(!response.ok) {console.log('There was an error!');};
+            return response.json();
+        }).then(data => {
+            data = data.data
+            console.log(data);
+            var blob = new Blob([data], {
+                type: "text/plain;charset=utf-8",
+            });
+            saveAs(blob, "or.json");
+        }).catch(err => {
+            console.log(err);
+        })
+}
+
+async function serveCsv() {
+    fetch('http://localhost:3000/filecsv')       
+        .then(response => {
+            if(!response.ok) {console.log('There was an error!');};
+            return response.json();
+        }).then(data => {
+            data = data.data
+            console.log(data);
+            var blob = new Blob([data], {
+                type: "text/plain;charset=utf-8",
+            });
+            saveAs(blob, "or.csv");
+        }).catch(err => {
+            console.log(err);
+        })
+}
+
 function openDataTable() {
     window.location.href = 'http://localhost:3000/datatable';
+}
+
+function logout() {
 }
