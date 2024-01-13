@@ -13,6 +13,12 @@
 </head>
 <body>
     <h1>F1 TEAMS 2023</h1>
+    <% if (auth) {%>
+        <a href="/profile">Korisnički profil</a>
+        <a href="/osvjezi">Osvježi preslike</a>
+    <%} else {%>
+        <a href="/login/">Prijava</a>
+    <% } %>
     <ul>
         <li><b>Name:</b> data about F1 teams 2023 season(after Austin GP)</li>
         <li><b>Licence:</b> <a href="https://github.com/pehab1611/OR/blob/main/LICENSE">licence</a></li>
@@ -20,6 +26,7 @@
         <li><b>Language:</b> english</li>
         <li><b>description:</b></li>
         <ul>
+            <li>id</li>
             <li>team name</li>
             <li>team base</li>
             <li>team chief</li>
@@ -37,6 +44,6 @@
         <li><b>key words:</b>ključne riječi: Formula 1, 2023, motorsport</li>
     </ul>
     <button onclick="openDataTable()">Datatable</button>
-    <a href="https://github.com/pehab1611/OR/blob/main/or.json">JSON data</a>
-    <a href="https://github.com/pehab1611/OR/blob/main/or.csv">CSV data</a>
+    <button onclick="serveJson()">JSON data</button>
+    <button onclick="serveCsv()">CSV data</button>
 </body>

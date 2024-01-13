@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>F1 Teams 2023</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Formula 1 Teams Data for the 2023 Season">
+    <meta name="author" content="Petra Habjanec">
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin = "anonymous" referrerpolicy = "no-referrer"> </script>
+    <script src="/function.js"> </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <% if (user) { %>
+        <h1>Korisnički profil</h1>
+        <img src="<%= user.picture %>" alt="">
+        <ul>
+            <li><b>Nickname: </b><%= user.nickname %></li>
+            <li><b>Name: </b><%= user.name %></li>
+            <li><b>Email: </b><%= user.email %></li>
+            <li><b>Email verified: </b><%= user.email_verified%></li>
+        </ul>
+        <a href="/logout/" onclick="logout()">Odjava2</a>
+        <a href="/logoutmy">Odjava1</a>
+    <% } else { %>
+        <h1>Niste prijavljeni!</h1>
+    <% } %> 
+
+</body>
