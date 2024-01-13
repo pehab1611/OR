@@ -1,0 +1,609 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Team and Driver API",
+    "description": "API for managing teams and drivers data",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/data": {
+      "get": {
+        "summary": "Get all teams with drivers",
+        "description": "Retrieve a list of all teams with their associated drivers' information.",
+        "responses": {
+          "200": {
+            "description": "Successful response with data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeamsWithDriversResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Empty database response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new team with drivers",
+        "description": "Create a new team along with associated drivers.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewTeamWithDrivers"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/data/{id}": {
+      "get": {
+        "summary": "Get team with drivers by ID",
+        "description": "Retrieve team details along with associated drivers by ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response with team and drivers data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeamsWithDriversResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "summary": "Update team and drivers by ID",
+        "description": "Update team details and associated drivers by ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateTeamWithDrivers"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete team with drivers by ID",
+        "description": "Delete team details and associated drivers by ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuccessResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/team/{id}": {
+      "get": {
+        "summary": "Get team details by ID",
+        "description": "Retrieve team details by ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response with team data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeamResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/driver/{id}": {
+      "get": {
+        "summary": "Get driver details by driverNum",
+        "description": "Retrieve driver details by driverNum.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response with driver data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DriverResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/drivers/{id}": {
+      "get": {
+        "summary": "Get drivers of a team by team ID",
+        "description": "Retrieve drivers of a team by team ID.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response with team drivers' data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TeamDriversResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Error response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TeamsWithDriversResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TeamWithDrivers"
+            }
+          }
+        }
+      },
+      "TeamWithDrivers": {
+        "type": "object",
+        "properties": {
+          "teamName": {
+            "type": "string"
+          },
+          "teamBase": {
+            "type": "string"
+          },
+          "teamChief": {
+            "type": "string"
+          },
+          "chassis": {
+            "type": "string"
+          },
+          "powerUnit": {
+            "type": "string"
+          },
+          "firstEntry": {
+            "type": "integer"
+          },
+          "teamChampionships": {
+            "type": "integer"
+          },
+          "driverChampionships": {
+            "type": "integer"
+          },
+          "highestRaceFinish": {
+            "type": "integer"
+          },
+          "polePositions": {
+            "type": "integer"
+          },
+          "fastestLaps": {
+            "type": "integer"
+          },
+          "points": {
+            "type": "integer"
+          },
+          "drivers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Driver"
+            }
+          }
+        }
+      },
+      "Driver": {
+        "type": "object",
+        "properties": {
+          "driverNum": {
+            "type": "integer"
+          },
+          "driverName": {
+            "type": "string"
+          },
+          "driverLast": {
+            "type": "string"
+          },
+          "nationality": {
+            "type": "string"
+          }
+        }
+      },
+      "NewTeamWithDrivers": {
+        "type": "object",
+        "properties": {
+          "teamName": {
+            "type": "string"
+          },
+          "teamBase": {
+            "type": "string"
+          },
+          "teamChief": {
+            "type": "string"
+          },
+          "chassis": {
+            "type": "string"
+          },
+          "powerUnit": {
+            "type": "string"
+          },
+          "firstEntry": {
+            "type": "integer"
+          },
+          "teamChampionships": {
+            "type": "integer"
+          },
+          "driverChampionships": {
+            "type": "integer"
+          },
+          "highestRaceFinish": {
+            "type": "integer"
+          },
+          "polePositions": {
+            "type": "integer"
+          },
+          "fastestLaps": {
+            "type": "integer"
+          },
+          "points": {
+            "type": "integer"
+          },
+          "drivers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Driver"
+            }
+          }
+        }
+      },
+      "SuccessResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "UpdateTeamWithDrivers": {
+        "type": "object",
+        "properties": {
+          "teamName": {
+            "type": "string"
+          },
+          "teamBase": {
+            "type": "string"
+          },
+          "teamChief": {
+            "type": "string"
+          },
+          "chassis": {
+            "type": "string"
+          },
+          "powerUnit": {
+            "type": "string"
+          },
+          "firstEntry": {
+            "type": "integer"
+          },
+          "teamChampionships": {
+            "type": "integer"
+          },
+          "driverChampionships": {
+            "type": "integer"
+          },
+          "highestRaceFinish": {
+            "type": "integer"
+          },
+          "polePositions": {
+            "type": "integer"
+          },
+          "fastestLaps": {
+            "type": "integer"
+          },
+          "points": {
+            "type": "integer"
+          },
+          "drivers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Driver"
+            }
+          }
+        }
+      },
+      "TeamResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Team"
+            }
+          }
+        }
+      },
+      "Team": {
+        "type": "object",
+        "properties": {
+          "teamName": {
+            "type": "string"
+          },
+          "teamBase": {
+            "type": "string"
+          },
+          "teamChief": {
+            "type": "string"
+          },
+          "chassis": {
+            "type": "string"
+          },
+          "powerUnit": {
+            "type": "string"
+          },
+          "firstEntry": {
+            "type": "integer"
+          },
+          "teamChampionships": {
+            "type": "integer"
+          },
+          "driverChampionships": {
+            "type": "integer"
+          },
+          "highestRaceFinish": {
+            "type": "integer"
+          },
+          "polePositions": {
+            "type": "integer"
+          },
+          "fastestLaps": {
+            "type": "integer"
+          },
+          "points": {
+            "type": "integer"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "DriverResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Driver"
+            }
+          }
+        }
+      },
+      "TeamDriversResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "response": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Driver"
+            }
+          }
+        }
+      }
+    }
+  }
+}
