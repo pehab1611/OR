@@ -1,21 +1,401 @@
-drivernum,teamname,teambase,teamchief,chassis,powerunit,firstentry,teamchampionships,driverchampionships,highestracefinish,poleposition,fastestlaps,points,drivername,driverlast,nationality
-14,Aston Martin Aramco Cognizant F1 Team,"Silverstone, United Kingdom",Mike Krack,AMR23,Mercedes,2018,0,0,1,1,1,236,Fernando,Alonso,Spanish
-18,Aston Martin Aramco Cognizant F1 Team,"Silverstone, United Kingdom",Mike Krack,AMR23,Mercedes,2018,0,0,1,1,1,236,Lance,Stroll,Canadian
-10,BWT Alpine F1 Team,"Enstone, United Kingdom",Bruno Famin,A523,Renault,1986,2,2,1,20,15,100,Pierre,Gasly,French
-31,BWT Alpine F1 Team,"Enstone, United Kingdom",Bruno Famin,A523,Renault,1986,2,2,1,20,15,100,Esteban,Ocon,French
-23,Williams Racing,"Grove, United Kingdom",James Vowles,FW45,Mercedes,1978,9,7,1,128,133,26,Alexander,Albon,Taiwanese
-2,Williams Racing,"Grove, United Kingdom",James Vowles,FW45,Mercedes,1978,9,7,1,128,133,26,Logan,Sargeant,American
-77,Alfa Romeo F1 Team Stake,"Hinwil, Switzerland",Alessandro Alunni Bravi,C43,Ferrari,1993,0,0,1,1,7,16,Valteri,Bottas,Finnish
-24,Alfa Romeo F1 Team Stake,"Hinwil, Switzerland",Alessandro Alunni Bravi,C43,Ferrari,1993,0,0,1,1,7,16,Zhou,Guanyu,Chinese
-27,MoneyGram Haas F1 Team,"Kannapolis, United States",Guenther Steiner,VF-23,Ferrari,2016,0,0,4,1,2,12,Nico,Hulkenberg,German
-20,MoneyGram Haas F1 Team,"Kannapolis, United States",Guenther Steiner,VF-23,Ferrari,2016,0,0,4,1,2,12,Kevin,Magnusen,Danish
-3,Scuderia AlphaTauri,"Faenza, Italy",Franz Tost,AT04,Honda RBPT,1985,0,0,1,1,3,10,Daniel,Ricciardo,Australian
-22,Scuderia AlphaTauri,"Faenza, Italy",Franz Tost,AT04,Honda RBPT,1985,0,0,1,1,3,10,Yuki,Tsunoda,Japanese
-1,Oracle Red Bull Racing,"Milton Keynes, United Kingdom",Christian Horner,RB19,Honda RBPT,1997,6,7,1,93,94,706,Max,Verstappen,Dutch
-11,Oracle Red Bull Racing,"Milton Keynes, United Kingdom",Christian Horner,RB19,Honda RBPT,1997,6,7,1,93,94,706,Sergio,Perez,Mexican
-44,Mercedes-AMG PETRONAS F1 Team,"Brackley, United Kingdom",Toto Wolff,W14,Mercedes,1970,8,9,1,129,95,344,Lewis,Hamilton,British
-63,Mercedes-AMG PETRONAS F1 Team,"Brackley, United Kingdom",Toto Wolff,W14,Mercedes,1970,8,9,1,129,95,344,George,Russell,British
-16,Scuderia Ferrari,"Maranello, Italy",Frédéric Vasseur,SF-23,Ferrari,1950,16,15,1,247,259,322,Charles,Leclerc,Monegasque
-55,Scuderia Ferrari,"Maranello, Italy",Frédéric Vasseur,SF-23,Ferrari,1950,16,15,1,247,259,322,Carlos,Sainz,Spanish
-81,McLaren Formula 1 Team,"Woking, United Kingdom",Andrea Stella,MCL60,Mercedes,1966,8,12,1,156,163,242,Oscar,Piastri,Australian
-4,McLaren Formula 1 Team,"Woking, United Kingdom",Andrea Stella,MCL60,Mercedes,1966,8,12,1,156,163,242,Lando,Norris,British
+team_id;teamname;teambase;teamchief;chassis;powerunit;firstentry;teamchampionships;driverchampionships;highestracefinish;poleposition;fastestlaps;points;driver_id;drivernum;drivername;driverlast;nationality
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;4;Lando;Norris;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;81;Oscar;Piastri;Australian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;55;Carlos;Sainz;Spanish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;16;Charles;Leclerc;Monegasque
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;63;George;Russell;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;44;Lewis;Hamilton;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;11;Sergio;Perez;Mexican
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;1;Max;Verstappen;Dutch
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;22;Yuki;Tsunoda;Japanese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;3;Daniel;Ricciardo;Australian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;20;Kevin;Magnusen;Danish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;27;Nico;Hulkenberg;German
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;24;Zhou;Guanyu;Chinese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;77;Valteri;Bottas;Finnish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;2;Logan;Sargeant;American
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;23;Alexander;Albon;Taiwanese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;31;Esteban;Ocon;French
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;10;Pierre;Gasly;French
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;18;Lance;Stroll;Canadian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;14;14;Fernando;Alonso;Spanish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;4;Lando;Norris;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;81;Oscar;Piastri;Australian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;55;Carlos;Sainz;Spanish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;16;Charles;Leclerc;Monegasque
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;63;George;Russell;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;44;Lewis;Hamilton;British
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;11;Sergio;Perez;Mexican
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;1;Max;Verstappen;Dutch
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;22;Yuki;Tsunoda;Japanese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;3;Daniel;Ricciardo;Australian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;20;Kevin;Magnusen;Danish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;27;Nico;Hulkenberg;German
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;24;Zhou;Guanyu;Chinese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;77;Valteri;Bottas;Finnish
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;2;Logan;Sargeant;American
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;23;Alexander;Albon;Taiwanese
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;31;Esteban;Ocon;French
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;10;Pierre;Gasly;French
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;18;Lance;Stroll;Canadian
+1;Aston Martin Aramco Cognizant F1 Team;Silverstone, United Kingdom;Mike Krack;AMR23;Mercedes;2018;0;0;1;1;1;236;18;14;Fernando;Alonso;Spanish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;4;Lando;Norris;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;81;Oscar;Piastri;Australian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;55;Carlos;Sainz;Spanish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;16;Charles;Leclerc;Monegasque
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;63;George;Russell;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;44;Lewis;Hamilton;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;11;Sergio;Perez;Mexican
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;1;Max;Verstappen;Dutch
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;22;Yuki;Tsunoda;Japanese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;3;Daniel;Ricciardo;Australian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;20;Kevin;Magnusen;Danish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;27;Nico;Hulkenberg;German
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;24;Zhou;Guanyu;Chinese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;77;Valteri;Bottas;Finnish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;2;Logan;Sargeant;American
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;23;Alexander;Albon;Taiwanese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;31;Esteban;Ocon;French
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;10;Pierre;Gasly;French
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;18;Lance;Stroll;Canadian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;10;14;Fernando;Alonso;Spanish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;4;Lando;Norris;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;81;Oscar;Piastri;Australian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;55;Carlos;Sainz;Spanish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;16;Charles;Leclerc;Monegasque
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;63;George;Russell;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;44;Lewis;Hamilton;British
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;11;Sergio;Perez;Mexican
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;1;Max;Verstappen;Dutch
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;22;Yuki;Tsunoda;Japanese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;3;Daniel;Ricciardo;Australian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;20;Kevin;Magnusen;Danish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;27;Nico;Hulkenberg;German
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;24;Zhou;Guanyu;Chinese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;77;Valteri;Bottas;Finnish
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;2;Logan;Sargeant;American
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;23;Alexander;Albon;Taiwanese
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;31;Esteban;Ocon;French
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;10;Pierre;Gasly;French
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;18;Lance;Stroll;Canadian
+2;BWT Alpine F1 Team;Enstone, United Kingdom;Bruno Famin;A523;Renault;1986;2;2;1;20;15;100;31;14;Fernando;Alonso;Spanish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;4;Lando;Norris;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;81;Oscar;Piastri;Australian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;55;Carlos;Sainz;Spanish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;16;Charles;Leclerc;Monegasque
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;63;George;Russell;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;44;Lewis;Hamilton;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;11;Sergio;Perez;Mexican
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;1;Max;Verstappen;Dutch
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;22;Yuki;Tsunoda;Japanese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;3;Daniel;Ricciardo;Australian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;20;Kevin;Magnusen;Danish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;27;Nico;Hulkenberg;German
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;24;Zhou;Guanyu;Chinese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;77;Valteri;Bottas;Finnish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;2;Logan;Sargeant;American
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;23;Alexander;Albon;Taiwanese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;31;Esteban;Ocon;French
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;10;Pierre;Gasly;French
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;18;Lance;Stroll;Canadian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;23;14;Fernando;Alonso;Spanish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;4;Lando;Norris;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;81;Oscar;Piastri;Australian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;55;Carlos;Sainz;Spanish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;16;Charles;Leclerc;Monegasque
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;63;George;Russell;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;44;Lewis;Hamilton;British
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;11;Sergio;Perez;Mexican
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;1;Max;Verstappen;Dutch
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;22;Yuki;Tsunoda;Japanese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;3;Daniel;Ricciardo;Australian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;20;Kevin;Magnusen;Danish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;27;Nico;Hulkenberg;German
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;24;Zhou;Guanyu;Chinese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;77;Valteri;Bottas;Finnish
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;2;Logan;Sargeant;American
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;23;Alexander;Albon;Taiwanese
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;31;Esteban;Ocon;French
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;10;Pierre;Gasly;French
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;18;Lance;Stroll;Canadian
+3;Williams Racing;Grove, United Kingdom;James Vowles;FW45;Mercedes;1978;9;7;1;128;133;26;2;14;Fernando;Alonso;Spanish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;4;Lando;Norris;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;81;Oscar;Piastri;Australian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;55;Carlos;Sainz;Spanish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;16;Charles;Leclerc;Monegasque
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;63;George;Russell;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;44;Lewis;Hamilton;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;11;Sergio;Perez;Mexican
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;1;Max;Verstappen;Dutch
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;22;Yuki;Tsunoda;Japanese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;3;Daniel;Ricciardo;Australian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;20;Kevin;Magnusen;Danish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;27;Nico;Hulkenberg;German
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;24;Zhou;Guanyu;Chinese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;77;Valteri;Bottas;Finnish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;2;Logan;Sargeant;American
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;23;Alexander;Albon;Taiwanese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;31;Esteban;Ocon;French
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;10;Pierre;Gasly;French
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;18;Lance;Stroll;Canadian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;77;14;Fernando;Alonso;Spanish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;4;Lando;Norris;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;81;Oscar;Piastri;Australian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;55;Carlos;Sainz;Spanish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;16;Charles;Leclerc;Monegasque
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;63;George;Russell;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;44;Lewis;Hamilton;British
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;11;Sergio;Perez;Mexican
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;1;Max;Verstappen;Dutch
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;22;Yuki;Tsunoda;Japanese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;3;Daniel;Ricciardo;Australian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;20;Kevin;Magnusen;Danish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;27;Nico;Hulkenberg;German
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;24;Zhou;Guanyu;Chinese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;77;Valteri;Bottas;Finnish
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;2;Logan;Sargeant;American
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;23;Alexander;Albon;Taiwanese
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;31;Esteban;Ocon;French
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;10;Pierre;Gasly;French
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;18;Lance;Stroll;Canadian
+4;Alfa Romeo F1 Team Stake;Hinwil, Switzerland;Alessandro Alunni Bravi;C43;Ferrari;1993;0;0;1;1;7;16;24;14;Fernando;Alonso;Spanish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;4;Lando;Norris;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;81;Oscar;Piastri;Australian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;55;Carlos;Sainz;Spanish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;16;Charles;Leclerc;Monegasque
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;63;George;Russell;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;44;Lewis;Hamilton;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;11;Sergio;Perez;Mexican
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;1;Max;Verstappen;Dutch
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;22;Yuki;Tsunoda;Japanese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;3;Daniel;Ricciardo;Australian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;20;Kevin;Magnusen;Danish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;27;Nico;Hulkenberg;German
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;24;Zhou;Guanyu;Chinese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;77;Valteri;Bottas;Finnish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;2;Logan;Sargeant;American
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;23;Alexander;Albon;Taiwanese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;31;Esteban;Ocon;French
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;10;Pierre;Gasly;French
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;18;Lance;Stroll;Canadian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;27;14;Fernando;Alonso;Spanish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;4;Lando;Norris;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;81;Oscar;Piastri;Australian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;55;Carlos;Sainz;Spanish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;16;Charles;Leclerc;Monegasque
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;63;George;Russell;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;44;Lewis;Hamilton;British
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;11;Sergio;Perez;Mexican
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;1;Max;Verstappen;Dutch
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;22;Yuki;Tsunoda;Japanese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;3;Daniel;Ricciardo;Australian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;20;Kevin;Magnusen;Danish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;27;Nico;Hulkenberg;German
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;24;Zhou;Guanyu;Chinese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;77;Valteri;Bottas;Finnish
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;2;Logan;Sargeant;American
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;23;Alexander;Albon;Taiwanese
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;31;Esteban;Ocon;French
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;10;Pierre;Gasly;French
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;18;Lance;Stroll;Canadian
+5;MoneyGram Haas F1 Team;Kannapolis, United States;Guenther Steiner;VF-23;Ferrari;2016;0;0;4;1;2;12;20;14;Fernando;Alonso;Spanish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;4;Lando;Norris;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;81;Oscar;Piastri;Australian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;55;Carlos;Sainz;Spanish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;16;Charles;Leclerc;Monegasque
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;63;George;Russell;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;44;Lewis;Hamilton;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;11;Sergio;Perez;Mexican
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;1;Max;Verstappen;Dutch
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;22;Yuki;Tsunoda;Japanese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;3;Daniel;Ricciardo;Australian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;20;Kevin;Magnusen;Danish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;27;Nico;Hulkenberg;German
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;24;Zhou;Guanyu;Chinese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;77;Valteri;Bottas;Finnish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;2;Logan;Sargeant;American
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;23;Alexander;Albon;Taiwanese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;31;Esteban;Ocon;French
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;10;Pierre;Gasly;French
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;18;Lance;Stroll;Canadian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;3;14;Fernando;Alonso;Spanish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;4;Lando;Norris;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;81;Oscar;Piastri;Australian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;55;Carlos;Sainz;Spanish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;16;Charles;Leclerc;Monegasque
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;63;George;Russell;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;44;Lewis;Hamilton;British
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;11;Sergio;Perez;Mexican
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;1;Max;Verstappen;Dutch
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;22;Yuki;Tsunoda;Japanese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;3;Daniel;Ricciardo;Australian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;20;Kevin;Magnusen;Danish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;27;Nico;Hulkenberg;German
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;24;Zhou;Guanyu;Chinese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;77;Valteri;Bottas;Finnish
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;2;Logan;Sargeant;American
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;23;Alexander;Albon;Taiwanese
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;31;Esteban;Ocon;French
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;10;Pierre;Gasly;French
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;18;Lance;Stroll;Canadian
+6;Scuderia AlphaTauri;Faenza, Italy;Franz Tost;AT04;Honda RBPT;1985;0;0;1;1;3;10;22;14;Fernando;Alonso;Spanish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;4;Lando;Norris;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;81;Oscar;Piastri;Australian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;55;Carlos;Sainz;Spanish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;16;Charles;Leclerc;Monegasque
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;63;George;Russell;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;44;Lewis;Hamilton;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;11;Sergio;Perez;Mexican
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;1;Max;Verstappen;Dutch
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;22;Yuki;Tsunoda;Japanese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;3;Daniel;Ricciardo;Australian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;20;Kevin;Magnusen;Danish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;27;Nico;Hulkenberg;German
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;24;Zhou;Guanyu;Chinese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;77;Valteri;Bottas;Finnish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;2;Logan;Sargeant;American
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;23;Alexander;Albon;Taiwanese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;31;Esteban;Ocon;French
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;10;Pierre;Gasly;French
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;18;Lance;Stroll;Canadian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;1;14;Fernando;Alonso;Spanish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;4;Lando;Norris;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;81;Oscar;Piastri;Australian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;55;Carlos;Sainz;Spanish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;16;Charles;Leclerc;Monegasque
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;63;George;Russell;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;44;Lewis;Hamilton;British
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;11;Sergio;Perez;Mexican
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;1;Max;Verstappen;Dutch
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;22;Yuki;Tsunoda;Japanese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;3;Daniel;Ricciardo;Australian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;20;Kevin;Magnusen;Danish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;27;Nico;Hulkenberg;German
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;24;Zhou;Guanyu;Chinese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;77;Valteri;Bottas;Finnish
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;2;Logan;Sargeant;American
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;23;Alexander;Albon;Taiwanese
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;31;Esteban;Ocon;French
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;10;Pierre;Gasly;French
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;18;Lance;Stroll;Canadian
+7;Oracle Red Bull Racing;Milton Keynes, United Kingdom;Christian Horner;RB19;Honda RBPT;1997;6;7;1;93;94;706;11;14;Fernando;Alonso;Spanish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;4;Lando;Norris;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;81;Oscar;Piastri;Australian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;55;Carlos;Sainz;Spanish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;16;Charles;Leclerc;Monegasque
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;63;George;Russell;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;44;Lewis;Hamilton;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;11;Sergio;Perez;Mexican
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;1;Max;Verstappen;Dutch
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;22;Yuki;Tsunoda;Japanese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;3;Daniel;Ricciardo;Australian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;20;Kevin;Magnusen;Danish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;27;Nico;Hulkenberg;German
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;24;Zhou;Guanyu;Chinese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;77;Valteri;Bottas;Finnish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;2;Logan;Sargeant;American
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;23;Alexander;Albon;Taiwanese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;31;Esteban;Ocon;French
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;10;Pierre;Gasly;French
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;18;Lance;Stroll;Canadian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;44;14;Fernando;Alonso;Spanish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;4;Lando;Norris;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;81;Oscar;Piastri;Australian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;55;Carlos;Sainz;Spanish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;16;Charles;Leclerc;Monegasque
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;63;George;Russell;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;44;Lewis;Hamilton;British
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;11;Sergio;Perez;Mexican
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;1;Max;Verstappen;Dutch
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;22;Yuki;Tsunoda;Japanese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;3;Daniel;Ricciardo;Australian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;20;Kevin;Magnusen;Danish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;27;Nico;Hulkenberg;German
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;24;Zhou;Guanyu;Chinese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;77;Valteri;Bottas;Finnish
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;2;Logan;Sargeant;American
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;23;Alexander;Albon;Taiwanese
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;31;Esteban;Ocon;French
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;10;Pierre;Gasly;French
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;18;Lance;Stroll;Canadian
+8;Mercedes-AMG PETRONAS F1 Team;Brackley, United Kingdom;Toto Wolff;W14;Mercedes;1970;8;9;1;129;95;344;63;14;Fernando;Alonso;Spanish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;4;Lando;Norris;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;81;Oscar;Piastri;Australian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;55;Carlos;Sainz;Spanish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;16;Charles;Leclerc;Monegasque
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;63;George;Russell;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;44;Lewis;Hamilton;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;11;Sergio;Perez;Mexican
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;1;Max;Verstappen;Dutch
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;22;Yuki;Tsunoda;Japanese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;3;Daniel;Ricciardo;Australian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;20;Kevin;Magnusen;Danish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;27;Nico;Hulkenberg;German
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;24;Zhou;Guanyu;Chinese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;77;Valteri;Bottas;Finnish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;2;Logan;Sargeant;American
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;23;Alexander;Albon;Taiwanese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;31;Esteban;Ocon;French
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;10;Pierre;Gasly;French
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;18;Lance;Stroll;Canadian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;16;14;Fernando;Alonso;Spanish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;4;Lando;Norris;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;81;Oscar;Piastri;Australian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;55;Carlos;Sainz;Spanish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;16;Charles;Leclerc;Monegasque
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;63;George;Russell;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;44;Lewis;Hamilton;British
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;11;Sergio;Perez;Mexican
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;1;Max;Verstappen;Dutch
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;22;Yuki;Tsunoda;Japanese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;3;Daniel;Ricciardo;Australian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;20;Kevin;Magnusen;Danish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;27;Nico;Hulkenberg;German
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;24;Zhou;Guanyu;Chinese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;77;Valteri;Bottas;Finnish
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;2;Logan;Sargeant;American
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;23;Alexander;Albon;Taiwanese
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;31;Esteban;Ocon;French
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;10;Pierre;Gasly;French
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;18;Lance;Stroll;Canadian
+9;Scuderia Ferrari;Maranello, Italy;Frédéric Vasseur;SF-23;Ferrari;1950;16;15;1;247;259;322;55;14;Fernando;Alonso;Spanish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;4;Lando;Norris;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;81;Oscar;Piastri;Australian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;55;Carlos;Sainz;Spanish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;16;Charles;Leclerc;Monegasque
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;63;George;Russell;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;44;Lewis;Hamilton;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;11;Sergio;Perez;Mexican
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;1;Max;Verstappen;Dutch
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;22;Yuki;Tsunoda;Japanese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;3;Daniel;Ricciardo;Australian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;20;Kevin;Magnusen;Danish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;27;Nico;Hulkenberg;German
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;24;Zhou;Guanyu;Chinese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;77;Valteri;Bottas;Finnish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;2;Logan;Sargeant;American
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;23;Alexander;Albon;Taiwanese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;31;Esteban;Ocon;French
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;10;Pierre;Gasly;French
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;18;Lance;Stroll;Canadian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;81;14;Fernando;Alonso;Spanish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;4;Lando;Norris;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;81;Oscar;Piastri;Australian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;55;Carlos;Sainz;Spanish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;16;Charles;Leclerc;Monegasque
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;63;George;Russell;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;44;Lewis;Hamilton;British
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;11;Sergio;Perez;Mexican
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;1;Max;Verstappen;Dutch
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;22;Yuki;Tsunoda;Japanese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;3;Daniel;Ricciardo;Australian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;20;Kevin;Magnusen;Danish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;27;Nico;Hulkenberg;German
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;24;Zhou;Guanyu;Chinese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;77;Valteri;Bottas;Finnish
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;2;Logan;Sargeant;American
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;23;Alexander;Albon;Taiwanese
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;31;Esteban;Ocon;French
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;10;Pierre;Gasly;French
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;18;Lance;Stroll;Canadian
+10;McLaren Formula 1 Team;Woking, United Kingdom;Andrea Stella;MCL60;Mercedes;1966;8;12;1;156;163;242;4;14;Fernando;Alonso;Spanish
